@@ -1,0 +1,85 @@
+/*body{
+	background:#000 url(http://4.bp.blogspot.com/-H7ZxXnigCl8/TzGq-jUoLyI/AAAAAAAAEO8/kCgRnSGSWgc/s000/pattern.png);
+}*/
+.social-wrap {
+position: relative;
+float: right;
+right:10px;
+top: 10px; 
+width: 70px;
+/*margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;*/
+}
+
+.social-wrap ul li a:focus
+{
+	outline: 0;
+}
+
+.social-wrap ul li{
+list-style:none;
+border-bottom:none;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+}
+
+.social-wrap li a {
+margin:5px 5px 0px 5px;
+padding:0px 0px 0px 0px;
+width:60px;
+height:60px;
+float:left;
+text-indent:-99999px;
+background: #191919;
+border:solid 1px #222121;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright:5px;
+-moz-border-radius-bottomleft:5px;
+-moz-border-radius-bottomright:5px;
+-webkit-border-top-left-radius:5px;
+-webkit-border-top-right-radius:5px;
+-webkit-border-bottom-left-radius:5px;
+-webkit-border-bottom-right-radius:5px;
+border-top-left-radius:5px;
+border-top-right-radius:5px;
+border-bottom-left-radius:5px;
+border-bottom-right-radius:5px;
+}
+.social-wrap li a.facebook {
+background: #191919 url(images/facebook.png) no-repeat -0px -88px;
+-webkit-transition:All 0.3s ease-out;
+-moz-transition:All 0.3s ease-out;
+-o-transition:All 0.3s ease-out;
+}
+.social-wrap li a.facebook:hover {
+background: #191919 url(images/facebook.png) no-repeat -0px -0px;
+}
+.social-wrap li a.twitter {
+background: #191919 url(images/twitter.png) no-repeat -0px -88px;
+-webkit-transition:All 0.3s ease-out;
+-moz-transition:All 0.3s ease-out;
+-o-transition:All 0.3s ease-out;
+}
+.social-wrap li a.twitter:hover {
+background: #191919 url(images/twitter.png) no-repeat -0px -0px;
+}
+.social-wrap li a.google-p {
+background:#191919 url(images/googlePlus.png) no-repeat -0px -88px;
+-webkit-transition:All 0.3s ease-out;
+-moz-transition:All 0.3s ease-out;
+-o-transition:All 0.3s ease-out;
+}
+.social-wrap li a.google-p:hover {
+background: #191919 url(images/googlePlus.png) no-repeat -0px -0px;
+}
+.social-wrap li a.linkedin {
+background:#191919 url(images/linkedin.png) no-repeat -0px -88px;
+-webkit-transition:All 0.3s ease-out;
+-moz-transition:All 0.3s ease-out;
+-o-transition:All 0.3s ease-out;
+}
+.social-wrap li a.linkedin:hover {
+background: #191919 url(images/linkedin.png) no-repeat -0px -0px;
+}
+
+

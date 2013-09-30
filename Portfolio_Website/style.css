@@ -1,0 +1,368 @@
+@charset "utf-8";
+
+/*
+Reset
+---------------------------------------------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+input, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+*,
+input[type="search"] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+input[type="search"]{
+	-webkit-appearance: textfield;
+}
+	
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration{
+	-webkit-appearance: none
+}
+/*----------------------------------------------------------------------------------------------------*/
+html
+{
+
+	border: 0; margin: 0; padding: 0;
+}
+
+body
+{
+	/*background-image:url(images/blackWallpaper.png);*/
+	background: #161616 url(images/pattern_40.gif) top left repeat;
+	/*background-repeat: no-repeat;	
+	background-attachment:fixed;
+	background-size: 100%;*/
+	border: 0;
+	margin: 0; 
+	padding: 0;
+}
+
+.header
+{
+	background-color: #333333;
+	background:url(images/bgHeader.jpg) repeat;
+	float: left;
+	height: 100%;
+	position:absolute;
+	text-align: center;
+	width: 250px;
+}
+
+
+/*--------------------------- footer -----------------------------------------------*/
+
+.footer
+{
+	border: 4px solid #333333;
+	padding: 0 0 16px 0;
+	height: 20px;
+	width:100%;
+	background-color: #333333;
+	position: fixed;
+	bottom:0;
+}
+
+.foot
+{
+	font:  13px normal Verdana, Arial, Helvetica, sans-serif;
+	color:#ccc;
+	text-align: center;
+}
+
+/* ---------------------------------- MENU CSS ------------------------------------*/
+
+#cssmenu 
+{
+	background: #333;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 250px;
+	position: absolute;
+	top: 280px;
+}
+
+#cssmenu li a
+{
+	height: 42px;
+	padding-left: 40px;
+}
+
+#cssmenu a 
+{
+	background: #333;
+	border-bottom: 1px dashed gray;
+	color: #ccc;
+	display: block;
+	margin: 0;
+	padding: 8px 8px;
+	text-decoration: none;
+	font: 14px normal Verdana, Arial, Helvetica, sans-serif;
+	text-align: left;
+}
+
+#cssmenu a:hover 
+{
+	background: #101212 left center no-repeat;
+	padding-bottom: 8px;
+	color: #00c6ff;
+}
+
+.first
+{
+	border-top: 1px dashed gray;
+}
+
+/*------------------------------- FB Twitter g+ -------------------------------------------------------*/
+
+
+
+/*-------------------------------- PreLoader -------------------------------------*/
+.preloader
+{
+	position:fixed;
+	top:40%;
+	left:250px;
+	right:0;
+	bottom:0;
+	z-index:99; /* makes sure it stays on top */	
+}
+
+.expand 
+{ 
+	width:80%; 
+	height:1px; 
+	margin:2px 0; 
+	background:#2187e7; 
+	position:absolute;
+	box-shadow:0px 0px 10px 1px rgba(0,198,255,0.7);
+	animation:fullexpand 3s ease-out;;
+    -moz-animation:fullexpand 3s ease-out;
+	-webkit-animation:fullexpand 3s ease-out;
+}
+
+@keyframes fullexpand 
+{
+	0%  { width:0px;}
+	100%{ width:80%;}	
+}
+
+@-moz-keyframes fullexpand 
+{
+	0%  { width:0px;}
+	100%{ width:80%;}	
+}
+
+@-webkit-keyframes fullexpand
+{
+	0%  { width:0px;}
+	100%{ width:80%;}	
+}
+
+/* --------------------------------- TOP PANEL CONTACT -------------------------------------------------*/
+
+a.close 
+{
+	position: absolute;
+	right:35px;
+	top: 10px;
+	height: 20px;
+	width: 10px;
+	cursor: pointer;
+	display: block;
+}
+
+
+#toppanel 
+{
+    position: relative; /*Panel will "push" the content down */
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px dashed gray;
+
+}
+
+#panel 
+{
+	width: 100%;
+	height: 270px;
+	color: #999999;
+	background: #333333;
+	overflow: hidden;
+	position: relative;
+	/*z-index: 3;*/
+	display: none;
+}
+
+#panel .content 
+{
+	/*width: 900px;*/
+	float:right;
+	margin-right: 290px;
+	padding-top: 15px;
+	text-align: left;
+	font-size: 0.85em;
+}
+
+#panel .content .left 
+{
+	width: 344px;
+	float: left;
+	padding: 10px 20px;
+	border-left: 1px dashed gray;
+}
+
+/*----------------------------- Formulaire contact ---------------------------------------*/
+
+form 
+{
+	color:gray;
+	font:  13px normal Verdana, Arial, Helvetica, sans-serif;
+	text-shadow:0 -1px 0 #000;
+	margin-top: 10px;
+}
+
+input 
+{
+	background-color:#272828;
+	border:1px solid #181818;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	box-shadow: 0 1px 2px rgba(255,255,255,.1), inset 0 1px 2px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 1px 2px rgba(255,255,255,.1), inset 0 1px 2px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0 1px 2px rgba(255,255,255,.1), inset 0 1px 2px rgba(0,0,0,.4);
+	color:#585858;
+	height:35px;
+	margin:10px 3px;
+	text-indent:7px;
+	text-shadow:0 1px 0 #000;
+	width:255px;
+}
+
+textarea
+{
+	background-color:#272828;
+	border:1px solid #181818;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	box-shadow: 0 1px 2px rgba(255,255,255,.1), inset 0 1px 2px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 1px 2px rgba(255,255,255,.1), inset 0 1px 2px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0 1px 2px rgba(255,255,255,.1), inset 0 1px 2px rgba(0,0,0,.4);
+	color:#585858;
+	height:120px;
+	margin:10px 3px;
+	text-indent:7px;
+	text-shadow:0 1px 0 #000;
+	width:300px;
+}
+
+
+input:focus 
+{
+	outline:none;
+	background-color:#fafafa;
+	color:black;
+	text-shadow:none;
+	-webkit-box-shadow:inset 0 0 10px #00c6ff, inset 0 1px 1px #000;
+	-moz-box-shadow:inset 0 0 10px #00c6ff, inset 0 1px 1px #000;
+	box-shadow:inset 0 0 7px #00c6ff, inset 0 1px 1px #000;
+	-webkit-transition:background-color .5s ease-in;
+	-moz-transition:color 2s ease-in;
+	-o-transition:color .3s ease-in;
+	transition:color .3s ease-in;
+}
+
+textarea:focus 
+{
+	outline:none;
+	background-color:#fafafa;
+	color:black;
+	text-shadow:none;
+	-webkit-box-shadow:inset 0 0 10px #00c6ff, inset 0 1px 1px #000;
+	-moz-box-shadow:inset 0 0 10px #00c6ff, inset 0 1px 1px #000;
+	box-shadow:inset 0 0 7px #00c6ff, inset 0 1px 1px #000;
+	-webkit-transition:background-color .5s ease-in;
+	-moz-transition:color 2s ease-in;
+	-o-transition:color .3s ease-in;
+	transition:color .3s ease-in;
+}
+
+a.button 
+{
+	display:inline-block;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	margin:0;
+	padding:6px 30px;
+	font-size:14px;
+	cursor:pointer;
+}
+
+
+a#grey 
+{
+	background: #7b7b7c; /* Old browsers */
+	background: -moz-linear-gradient(top, #7b7b7c 10%, #494c4e 85%, #616263 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(10%,#7b7b7c), color-stop(85%,#494c4e), color-stop(100%,#616263)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #7b7b7c 10%,#494c4e 85%,#616263 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #7b7b7c 10%,#494c4e 85%,#616263 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #7b7b7c 10%,#494c4e 85%,#616263 100%); /* IE10+ */
+	background: linear-gradient(top, #7b7b7c 10%,#494c4e 85%,#616263 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7b7b7c', endColorstr='#616263',GradientType=0 ); /* IE6-9 */
+	box-shadow:0 1px 2px #000, inset 0 1px 0 rgba(255,255,255,.5) ;
+	-moz-box-shadow:0 1px 2px #000, inset 0 1px 0 #4a4a4a ;
+	-webkit-box-shadow:0 1px 2px rgba(0,0,0,.7), inset 0 1px 0 rgba(255,255,255,.3) ;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d6d6e', endColorstr='#525455',GradientType=0 ); /* IE6-9 */
+	border:1px solid #1a1a1a;
+	color:#191919;
+	text-shadow: 0 1px 0 rgba(255,255,255,.2);
+}
+
+a#grey:hover 
+{
+	background: #686868; /* Old browsers */
+	background: -moz-linear-gradient(top, #686868 10%, #404344 85%, #515354 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(10%,#686868), color-stop(85%,#404344), color-stop(100%,#515354)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #686868 10%,#404344 85%,#515354 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #686868 10%,#404344 85%,#515354 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #686868 10%,#404344 85%,#515354 100%); /* IE10+ */
+	background: linear-gradient(top, #686868 10%,#404344 85%,#515354 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#686868', endColorstr='#515354',GradientType=0 ); /* IE6-9 */
+	color: white;
+}
+
+a#grey:active 
+{
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.5);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.5);
+	-webkit-transition:-webkit-box-shadow .1s ease-in;
+	-moz-transition:color .3s ease-in;
+	-o-transition:color .3s ease-in;
+	transition:color .3s ease-in;
+}
