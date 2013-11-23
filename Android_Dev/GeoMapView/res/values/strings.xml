@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GeoMapView</string>
+    <string name="action_settings">Settings</string>
+    <string name="latitude">Latitude</string>
+	<string name="longitude">Longitude</string>
+	<string name="altitude">Altitude</string>
+	<string name="choiSource">Choisir la source</string>
+	<string name="getPosition">Obtenir Position</string>
+	<string name="displayAddr">Afficher adresse</string>
+	
+</resources>

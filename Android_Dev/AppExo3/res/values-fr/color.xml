@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="couleurMsg">#221596</color>
+	<color name="couleurTitre">#000000</color>
+	<color name="couleurFond">#DDDDDD</color>
+</resources>

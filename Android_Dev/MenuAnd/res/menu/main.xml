@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<item android:id="@+id/option"
+	    android:title="@string/options"
+	    android:icon="@drawable/spanner32">
+	  
+	      <menu android:id="@+id/sousmenu">
+			 <item android:id="@+id/favoris"
+			       android:title="@string/favoris"   />	
+		 
+			 <item android:id="@+id/stats"
+			       android:title="@string/stats"  />
+		     </menu>
+	 </item>
+	 
+	<item android:id="@+id/quitter"
+	    android:title="@string/quitter"
+	    android:icon="@drawable/stop32"/>
+	 
+	
+
+</menu>
